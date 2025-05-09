@@ -5,8 +5,17 @@ res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
 
 # returns BeautifulSoup object
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
-soup.prettify()
+
 # captures table entries
 table_header = soup.select('th') # table headers
 table_contents = soup.select('tr') # table rows
 
+
+# get details about table_header
+# 0-12 is useful to me
+x = 0
+
+# this gets me the table headers
+while x <= 12:
+    print(f'{table_header[x].getText()}')
+    x += 1
