@@ -9,7 +9,7 @@ res = req.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
 # captures wanted elements using CSS selector?
-elems = soup.select('#body > table > tbody > tr:nth-child(2) > td:nth-child(1) > table')
+elems = soup.select('body > table > tbody > tr:nth-child(2) > td:nth-child(1) > table > tbody > tr:nth-child(2)')
 
 print(len(elems))
 
