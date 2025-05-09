@@ -1,14 +1,12 @@
-import requests as req # captures webpages
-import bs4 # parses html?
+import requests, bs4, csv
 
-# use baseballmusings.com, returns Response object
-res = req.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
+# returns Response object
+res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
 
-# takes text of Response object and returns BeautifulSoup object
-# needed for BeautifulSoup.select()
+# returns BeautifulSoup object
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
 # captures table entries
-table_header = soup.select('th') # retrieves table headers
-table_contents = soup.select('tr') # selects elements with <tr> tage which are the table elements
+table_header = soup.select('th') # table headers
+table_contents = soup.select('tr') # table rows
 
