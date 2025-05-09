@@ -1,2 +1,3 @@
 1. surround request with try-catch
 2. Figure out how to capture the table data using BeautifulSoup
+    -I think I freaking did it
