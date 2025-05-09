@@ -1,3 +1,4 @@
 1. surround request with try-catch
 2. Figure out best way to store the data
     -probably csv
+    -will have to format it first, kind of comes out wonky
