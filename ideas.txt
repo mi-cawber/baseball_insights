@@ -1,3 +1,2 @@
 1. surround request with try-catch
-2. Structue CSV
-3. FIGURE OUT WHY TF IT WON'T WRITE SHIT
+2. Get table contents onto table

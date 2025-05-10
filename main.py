@@ -7,15 +7,6 @@ res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
 
 # captures table entries
-table_header = soup.select('th') # table headers
 table_contents = soup.select('tr') # table rows
 
-
-
-
-# could be this simple to add
-with open('data.csv', 'a') as file:
-    x = 0
-    while x <= 12:
-        file.write(f'{table_header[x].getText()}')
-        x += 1
+# add contents to data.csv file
