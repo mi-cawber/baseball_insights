@@ -14,4 +14,5 @@ with open('data.csv', 'w') as file:
             break
         file.write(f'{table_header[x].getText()}' + ',')
         x += 1
+    file.write(',Date Collected') # add row for date
     file.write('\n') # do a newline at the end
