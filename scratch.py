@@ -15,9 +15,10 @@ with open('data.csv', 'a') as file:
     print(truncated_contents[12].getText())
     from datetime import datetime, date
 
+    for element in truncated_contents:
+        print(element.getText())
 
-    x=0    
-    while x <13:
-        print(f'{truncated_contents[x].getText()},')
-        x +=1
-    print(date_string)
+
+
+
+         
