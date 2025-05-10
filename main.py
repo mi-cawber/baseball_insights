@@ -19,9 +19,9 @@ today = date.today()
 date_string = today.strftime("%Y-%m-%d")
 
 
-def test():
-    x=0
-    while x <13:
-        print(truncated_contents[x].getText())
-        x +=1
-    print(date_string)
+
+x=0    
+while x <13:
+    print(f'{truncated_contents[x].getText()},')
+    x +=1
+print(date_string)
