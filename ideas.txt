@@ -3,4 +3,3 @@
     -truncate the table string
     -player data every 13 elements
     -[456] is the last useful data
-3. Add header 'date collected'
