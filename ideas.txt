@@ -1,4 +1,3 @@
 1. surround request with try-catch
-2. Figure out best way to store the data
-    -probably csv
-    -will have to format it first, kind of comes out wonky
+2. Structue CSV
+3. FIGURE OUT WHY TF IT WON'T WRITE SHIT

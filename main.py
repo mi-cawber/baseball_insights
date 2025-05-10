@@ -1,4 +1,4 @@
-import requests, bs4, csv
+import requests, bs4
 
 # returns Response object
 res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
@@ -11,11 +11,11 @@ table_header = soup.select('th') # table headers
 table_contents = soup.select('tr') # table rows
 
 
-# get details about table_header
-# 0-12 is useful to me
-x = 0
 
-# this gets me the table headers
-while x <= 12:
-    print(f'{table_header[x].getText()}')
-    x += 1
+
+# could be this simple to add
+with open('data.csv', 'a') as file:
+    x = 0
+    while x <= 12:
+        file.write(f'{table_header[x].getText()}')
+        x += 1
