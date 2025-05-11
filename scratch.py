@@ -1,24 +1,11 @@
-import requests, bs4
-from datetime import datetime, date
+example_array = []
 
-with open('data.csv', 'a') as file:
+x = 0
 
-    # current date variable
-    today = date.today()
-    date_string = today.strftime("%Y-%m-%d")
-    
-    # get hit streak data from web
-    res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
-    soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
-    raw_contents = soup.select('td') # captures data
-    truncated_contents = raw_contents[2:457] # truncates irrelevant data (now range == [0]-[454])
-    print(truncated_contents[12].getText())
-    from datetime import datetime, date
+while x < 100:
+    example_array.append(x)
+    x += 1
 
-    for element in truncated_contents:
-        print(element.getText())
+for element in example_array:
+    print(f'{example_array[element]},')
 
-
-
-
-         

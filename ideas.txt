@@ -1,5 +1,4 @@
 1. surround request with try-catch
 2. Get table contents onto table
-    -truncate the table string
     -player data every 13 elements
     -[456] is the last useful data
