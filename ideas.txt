@@ -1,4 +1,7 @@
 1. surround request with try-catch
 2. Get table contents onto table
+    -Example: print("Save this", file=open("note.txt", "w")) writes to a file
+        -BRO WTF
     -player data every 13 elements
+        -JUST USE END=','
     -[456] is the last useful data

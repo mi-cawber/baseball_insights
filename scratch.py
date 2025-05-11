@@ -7,5 +7,5 @@ while x < 100:
     x += 1
 
 for element in example_array:
-    print(f'{example_array[element]},')
+    print(f'{example_array[element]}', end=',') #THIS FUCKING DOES IT
 
