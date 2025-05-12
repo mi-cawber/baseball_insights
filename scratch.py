@@ -1,10 +1,11 @@
-example_array = []
+import requests, bs4
 
-x = 0
+# get hit streak data from web
+res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
+soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
+raw_contents = soup.select('td') # captures data
+truncated_contents = raw_contents[2:456] # truncates irrelevant data (now range == [0]-[454])
 
-while x < 100:
-    example_array.append(x)
-    x += 1
-
-for element in example_array:
-    print(f'{example_array[element]}', end=',') #THIS FUCKING DOES IT
+for element in truncated_contents:
+   
+    print(f'{element.getText()}', end=',') #THIS FUCKING DOES IT
