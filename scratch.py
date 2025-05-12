@@ -8,4 +8,4 @@ truncated_contents = raw_contents[2:456] # truncates irrelevant data (now range 
 
 for element in truncated_contents:
    
-    print(f'{element.getText()}', end=',') #THIS FUCKING DOES IT
+    print(f'{element.get_text()}', end=',') #THIS FUCKING DOES IT

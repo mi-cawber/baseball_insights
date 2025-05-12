@@ -5,3 +5,8 @@
     -player data every 13 elements
         -JUST USE END=','
     -[456] is the last useful data
+
+
+
+
+what if I just captured the names and data separately
