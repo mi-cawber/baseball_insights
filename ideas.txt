@@ -10,3 +10,4 @@
 
 
 what if I just captured the names and data separately
+what if I put them all into an array cuz im baller
