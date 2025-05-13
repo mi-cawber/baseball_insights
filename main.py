@@ -6,4 +6,4 @@ raw = soup.select('td .number, td .letter') # captures data in Tag format
 array = [] # to store data 
 
 functions.data_transfer(raw, array) # transfers Tag data to array
-functions.array_csv(array,'test.csv') # import into csv file
+functions.array_csv(array,'data.csv') # import into csv file

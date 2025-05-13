@@ -24,11 +24,10 @@ def print_array(array):
     for element in array:
         print(element)
 
-
+# inserts data into csv
 def array_csv(array, csv):
     # will be needed later
     today = date.today().strftime("%Y-%m-%d")
-
     # open file in append mode
     with open(csv, 'a') as file:
         # enumerate() gives index and value

@@ -1,18 +1,16 @@
-import requests, bs4
-# this created the header for  data.csv
-with open('data.csv', 'w') as file:
-    # returns Response object
-    res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
-    # returns BeautifulSoup object
-    soup = bs4.BeautifulSoup(res.text, 'html.parser')
-    # captures table entries
-    table_header = soup.select('th') # table headers
-    x = 0
-    while x <= 12:
-        if x == 12:
-            file.write(f'{table_header[x].getText()}') #so there isn't the extra comma at the end
-            break
-        file.write(f'{table_header[x].getText()}' + ',')
-        x += 1
-    file.write(',Date Collected') # add row for date
-    file.write('\n') # do a newline at the end
+import requests, bs4, functions
+
+res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
+soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
+raw = soup.select('td .number, td .letter') # captures data in Tag format
+array = [] # to store data
+
+for i in raw:
+    array.append(i.getText())
+
+array = array[:13]
+
+with open('data.csv', 'a') as file:
+    for i in array:
+        file.write(f'{i},')
+    file.write(f'Date Collected')

@@ -1,4 +1,1 @@
-1. get contents properly into csv
-2. There is something on the name data that is making it newline
-3. do finishing touches
-    -"date added," that kind of stuff
+1. check when data was last scraped, get data retroactively if needed
