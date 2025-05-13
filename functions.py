@@ -1,6 +1,7 @@
-import requests, bs4, functions
+import requests, bs4, csv
 from datetime import date
 
+# big boss function, receives data
 def retrieve_data():
     res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
     soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
@@ -54,3 +55,10 @@ def array_csv(array, csv):
             file.write(f'{element},')
         # this will print last
         file.write(f'{today}\n')
+
+# checks if the function has been run today, will stop duplicate data
+def date_checker():
+    with open('data.csv', 'r') as file:
+        reader = csv.reader(file)
+        lizt = list(reader)
+        return lizt
