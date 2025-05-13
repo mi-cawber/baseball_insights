@@ -60,5 +60,13 @@ def array_csv(array, csv):
 def date_checker():
     with open('data.csv', 'r') as file:
         reader = csv.reader(file)
-        lizt = list(reader)
-        return lizt
+        liszt = list(reader)
+        liszt = liszt[-1][-1] #last element of last row
+
+        today = date.today().strftime("%Y-%m-%d")
+
+        if liszt == today:
+            print(f'Abort: Data has already been collected for {today} :)')
+            exit()
+        else:
+            print(f'Collecting current hit streak data for {today}... :)')
