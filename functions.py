@@ -1,3 +1,4 @@
+from datetime import date
 
 # transfers Tag data into array
 def data_transfer(raw, array):
@@ -25,7 +26,24 @@ def print_array(array):
 
 
 def array_csv(array, csv):
-    # open file
+    # will be needed later
+    today = date.today().strftime("%Y-%m-%d")
+
+    # open file in append mode
     with open(csv, 'a') as file:
-        for element in array:
+        # enumerate() gives index and value
+        for index, element in enumerate(array):
+            # if a player's name
+            if element[0].isalpha():
+                    # if first element of array
+                    if index == 0:
+                        file.write(f'{element},')
+                        continue
+                    else:
+                        # add date added for previous row and newline to next
+                        file.write(f'{today}\n{element},')
+                        continue
+            # add numerical data
             file.write(f'{element},')
+        # this will print last
+        file.write(f'{today}')
