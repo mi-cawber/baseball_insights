@@ -13,4 +13,4 @@ array = array[:13]
 with open('data.csv', 'a') as file:
     for i in array:
         file.write(f'{i},')
-    file.write(f'Date Collected')
+    file.write(f'Date Collected\n')
