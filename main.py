@@ -1,17 +1,19 @@
 import requests, bs4
-from datetime import datetime, date
 
-with open('data.csv', 'a') as file:
+# get hit streak data from web
+res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
+soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
+raw_contents = soup.select('td .number, td .letter') # captures data
 
-    # current date variable
-    today = date.today()
-    date_string = today.strftime("%Y-%m-%d")
-    
-    # get hit streak data from web
-    res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
-    soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
-    raw_contents = soup.select('td') # captures data
-    truncated_contents = raw_contents[2:456] # truncates irrelevant data (now range == [0]-[454])
+print(len(raw_contents))
+str(raw_contents[415])
+print(raw_contents[415].attrs)
+exit()
+truncated_elements = raw_contents[2:]
 
-    for element in truncated_contents:
-        print(element.getText())
+
+
+
+for element in truncated_elements:
+   
+    print(f'{element.get_text()}', end=',') #THIS FUCKING DOES IT
