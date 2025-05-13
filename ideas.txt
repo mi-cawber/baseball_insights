@@ -1,13 +1,4 @@
-1. surround request with try-catch
-2. Get table contents onto table
-    -Example: print("Save this", file=open("note.txt", "w")) writes to a file
-        -BRO WTF
-    -player data every 13 elements
-        -JUST USE END=','
-
-
-
-
-what if I just captured the names and data separately
-what if I put them all into an array cuz im baller
-mf, you never considered the fact that the list size will change
+1. get contents properly into csv
+2. There is something on the name data that is making it newline
+3. do finishing touches
+    -"date added," that kind of stuff

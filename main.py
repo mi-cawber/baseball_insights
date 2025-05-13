@@ -8,3 +8,5 @@ array = [] # to store data
 
 s.data_transfer(raw, array) # transfers Tag data to array
 s.print_array(array) # shows array
+
+s.array_csv(array,'test.csv')
