@@ -4,10 +4,10 @@
         -BRO WTF
     -player data every 13 elements
         -JUST USE END=','
-    -[456] is the last useful data
 
 
 
 
 what if I just captured the names and data separately
 what if I put them all into an array cuz im baller
+mf, you never considered the fact that the list size will change

@@ -1,21 +1,25 @@
 import requests, bs4
 
-# get hit streak data from web
+
+
+ 
 res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
 soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
-raw_contents = soup.select('td .number, td .letter') # captures data
-data_array = [] # im gonna put the data in here, easier to manipulate
-
-
-
+contents = soup.select('td .number, td .letter') # captures data in Tag format
 
 # transfers Tag data into array
-def data_transfer():
-    for element in raw_contents:
-        array.append(element.getText())
-        
+def data_transfer(raw, array):
+    blacklist = ['Player', 'Games', 'At Bats', 'Runs', 'Hits',
+                 'HR', 'RBI', 'BB', 'K', 'BA', 'OBA', 'Slug%',
+                 'Last Game Date', '']
+    for element in raw:
+        if element.getText() in blacklist:
+            continue
+        else:
+            array.append(element.getText())
+
 # shows data array
-def show_data_array():
+def print_array(array):
+    print(f'The length of the array is: {len(array)}', '\n')
     for element in array:
         print(element)
-
