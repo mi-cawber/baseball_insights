@@ -1,4 +1,12 @@
+import requests, bs4, functions
 from datetime import date
+
+def retrieve_data():
+    res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
+    soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
+    raw = soup.select('td .number, td .letter') # captures data in Tag format
+    array = [] # to store data
+    return raw, array
 
 # transfers Tag data into array
 def data_transfer(raw, array):
@@ -45,4 +53,4 @@ def array_csv(array, csv):
             # add numerical data
             file.write(f'{element},')
         # this will print last
-        file.write(f'{today}')
+        file.write(f'{today}\n')
