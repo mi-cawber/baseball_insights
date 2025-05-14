@@ -58,7 +58,7 @@ def array_csv(array, csv):
 
 # checks if the function has been run today, will stop duplicate data
 def date_checker():
-    with open('data.csv', 'r') as file:
+    with open('hit_streaks.csv', 'r') as file:
         reader = csv.reader(file)
         liszt = list(reader)
         liszt = liszt[-1][-1] #last element of last row
