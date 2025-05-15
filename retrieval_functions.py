@@ -60,8 +60,8 @@ def list_csv(list, csv):
         file.write(f'{today}\n')
 
 # checks if the function has been run today, will stop duplicate data
-def date_checker():
-    with open('hit_streaks.csv', 'r') as file:
+def date_checker(file):
+    with open(file, 'r') as file:
         reader = csv.reader(file)
         liszt = list(reader)
         liszt = liszt[-1][-1] #last element of last row
@@ -72,4 +72,4 @@ def date_checker():
             print(f'Abort: Data has already been collected for {today} :)')
             exit()
         else:
-            print(f'Collecting current hit streak data for {today}... :)')
+            print(f'Collecting data for {today}... :)')
