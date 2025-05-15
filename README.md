@@ -1,2 +1,5 @@
+![Dodger Stadium](photos/dodger_stadium.jpg)
+
 # baseball_insights
-web scraping with python to collect baseball data and generate insights
+The goal of this program is to collect baseball data from the internet and generate
+potentially interesting insights. For example, 
