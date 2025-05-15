@@ -1,4 +1,4 @@
-![Dodger Stadium](photos/baseball_player.png)
+![Baseball Player](photos/baseball_player.png)
 
 # baseball_insights
 The goal of this program is to collect baseball data from the internet and generate
