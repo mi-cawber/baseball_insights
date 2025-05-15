@@ -6,12 +6,12 @@ def retrieve_data():
     res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
     soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
     raw = soup.select('td .number, td .letter') # captures data in Tag format
-    array = [] # to store data
-    return raw, array
+    list = [] # to store data
+    return raw, list
 
-# transfers Tag data into array
-def data_transfer(raw, array):
-    # we don't want these items in the array
+# transfers Tag data into list
+def data_transfer(raw, list):
+    # we don't want these items in the list
     blacklist = ['Player', 'Games', 'At Bats', 'Runs', 'Hits',
                  'HR', 'RBI', 'BB', 'K', 'BA', 'OBA', 'Slug%',
                  'Last Game Date']
@@ -19,31 +19,31 @@ def data_transfer(raw, array):
         # if the element is a member of the blacklist, skip
         if element.getText() in blacklist:
             continue
-        # if okay, add to array
+        # if okay, add to list
         else:
-            array.append(element.getText())
+            list.append(element.getText())
     # get rid of pesky '\n's in player strings
-    for i in range(len(array)):
-        array[i] = array[i].strip()
+    for i in range(len(list)):
+        list[i] = list[i].strip()
 
-# shows data array
-def print_array(array):
+# shows data list
+def print_list(list):
     # show length
-    print(f'The length of the array is: {len(array)}', '\n')
-    for element in array:
+    print(f'The length of the list is: {len(list)}', '\n')
+    for element in list:
         print(element)
 
 # inserts data into csv
-def array_csv(array, csv):
+def list_csv(list, csv):
     # will be needed later
     today = date.today().strftime("%Y-%m-%d")
     # open file in append mode
     with open(csv, 'a') as file:
         # enumerate() gives index and value
-        for index, element in enumerate(array):
+        for index, element in enumerate(list):
             # if a player's name
             if element[0].isalpha():
-                    # if first element of array
+                    # if first element of list
                     if index == 0:
                         file.write(f'{element},')
                         continue

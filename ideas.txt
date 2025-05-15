@@ -3,3 +3,4 @@
 2. Figure out insights of interest
     -Frequencies for players
         -Who is on the list the most?
+3. what other data can I scrape?
