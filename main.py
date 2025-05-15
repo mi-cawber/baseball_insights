@@ -1,4 +1,4 @@
-import functions as f
+import retrieval_functions as f
 
 f.date_checker()
 raw, array = f.retrieve_data()

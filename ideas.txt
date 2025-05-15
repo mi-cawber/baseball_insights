@@ -1,2 +1,5 @@
 1. check when data was last scraped, get data retroactively if needed
-2. start implementing pandas, matplotlib
+    -The ending on the URL is ?EndDate=MM%2FDD%2FYYY
+2. Figure out insights of interest
+    -Frequencies for players
+        -Who is on the list the most?
