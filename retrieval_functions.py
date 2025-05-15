@@ -2,8 +2,8 @@ import requests, bs4, csv
 from datetime import date
 
 # big boss function, receives data
-def retrieve_data():
-    res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
+def retrieve_data(url):
+    res = requests.get(url) #returns response object
     soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
     raw = soup.select('td .number, td .letter') # captures data in Tag format
     list = [] # to store data
@@ -14,7 +14,10 @@ def data_transfer(raw, list):
     # we don't want these items in the list
     blacklist = ['Player', 'Games', 'At Bats', 'Runs', 'Hits',
                  'HR', 'RBI', 'BB', 'K', 'BA', 'OBA', 'Slug%',
-                 'Last Game Date']
+                 'Last Game Date', 'AL East', 'AL Central',
+                 'AL West', 'NL East', 'NL Central', 'NL West',
+                 'Record', 'Win Pct', 'Division GB', 'WildCard GB',
+                 'League GB']
     for element in raw:
         # if the element is a member of the blacklist, skip
         if element.getText() in blacklist:
