@@ -1,4 +1,5 @@
 ![Baseball Player](photos/baseball_player.png)
+<img src='photos/baseball_player.png' alt='baseball player' style='width: 90px; height: 90px'>
 
 # baseball_insights
 The goal of this program is to collect baseball data from the internet and generate
