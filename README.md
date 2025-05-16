@@ -6,5 +6,10 @@ potentially interesting insights. For example, seeing which players are consiste
 
 # Libraries Used
 [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/): Used for retrieving baseball stats from the web.
+`res = requests.get(url) #returns response object
+soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
+raw = soup.select('td .number, td .letter') # captures data in Tag format
+list = [] # to store data
+return raw, list`
 
 [pandas](https://pandas.pydata.org/docs/): Used for computational operations on retrieved data.
