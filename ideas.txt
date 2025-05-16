@@ -6,4 +6,4 @@
 3. what other data can I scrape?
     -standings (done)
 4. enable automatic running of script
-    -using schedule, time
+    -use crontab
