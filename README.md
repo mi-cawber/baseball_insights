@@ -7,10 +7,14 @@ potentially interesting insights. For example, seeing which players are consiste
 # Libraries Used
 [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/): Used for retrieving baseball stats from the web.
 <br>
-`res = requests.get(url) #returns response object` <br>
+e.g., <br>
+`res = requests.get(url) # returns response object` <br>
 `soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object` <br>
-`raw = soup.select('td .number, td .letter') # captures data in Tag format` <br>
+`raw = soup.select('td .number, td .letter') # returns data in type Tag` <br>
 `list = [] # to store data` <br>
-`return raw, list`
 
 [pandas](https://pandas.pydata.org/docs/): Used for computational operations on retrieved data.
+<br>
+e.g.,<br>
+`df = pd.read_csv('hit_streaks.csv') # create dataframe`<br>
+`print(df['Player'].value_counts()) # print player frequencies`
