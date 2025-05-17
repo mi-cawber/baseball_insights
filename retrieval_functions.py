@@ -60,7 +60,7 @@ def list_csv(list, csv):
         file.write(f'{today}\n')
 
 # checks if the function has been run today, will stop duplicate data
-def date_checker(file):
+def date_checker(file, data):
     with open(file, 'r') as file:
         reader = csv.reader(file)
         liszt = list(reader)
@@ -69,7 +69,7 @@ def date_checker(file):
         today = date.today().strftime("%Y-%m-%d")
 
         if liszt == today:
-            print(f'Abort: Data has already been collected for {today} :)')
+            print(f'Abort: {data} data has already been collected for {today} :)')
             exit()
         else:
-            print(f'Collecting data for {today}... :)')
+            print(f'Collecting {data} data for {today}... :)')

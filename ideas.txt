@@ -3,7 +3,10 @@
 2. Figure out insights of interest
     -Frequencies for players
         -Who is on the list the most?
+    -What is the highest streak?
+    -Average length of streaks?
+    -sort teams by wins
 3. what other data can I scrape?
-    -standings (done)
+    -Other hitting stats?
 4. enable automatic running of script
     -use crontab
