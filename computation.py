@@ -12,3 +12,5 @@ winpct = winpct.sort_values('Win Pct', ascending=False) # highest pct at top
 
 standings = pd.read_csv('standings.csv')
 record = standings[['Team', 'Record']]
+record = record.sort_values('Record', ascending=False)
+print(record)
