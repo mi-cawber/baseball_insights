@@ -1,6 +1,9 @@
-import retrieval_functions as f
+import pandas as pd
 
-f.date_checker('standings.csv')
-raw, list = f.retrieve_data('https://www.baseballmusings.com/cgi-bin/Standings.py?year=2025')
-f.data_transfer(raw, list)
-f.list_csv(list,'standings.csv') 
+standings = pd.read_csv('standings.csv') # standings dataframe
+
+standings['Date Collected'] = pd.to_datetime(standings['Date Collected'])
+
+standings.sort_values(['Date Collected'], ascending=False)
+
+print(standings)
