@@ -1,15 +1,10 @@
-import pandas as pd, matplotlib as plt
-
-streaks = pd.read_csv('hit_streaks.csv') # streak dataframe
-#print(streaks['Player'].value_counts()) # print player frequencies
+import pandas as pd
 
 
-standings = pd.read_csv('standings.csv') # standings dataframe
-winpct = standings[['Team','Win Pct']] # double brackets? not sure why needed
-winpct = winpct.sort_values('Win Pct', ascending=False) # highest pct at top
-print(winpct)
+def current_standings():
+    standings = pd.read_csv('standings.csv') # standings dataframe
+    # first set of brackets accesses dataframe, second set is list of columns
+    standings = standings[['Team','Record']]
+    print(standings.tail(30)) # 30 teams
 
-standings = pd.read_csv('standings.csv')
-record = standings[['Team', 'Record']]
-record = record.sort_values('Record', ascending=False)
-print(record)
+current_standings()
