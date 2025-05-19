@@ -1,0 +1,114 @@
+index,Year,Winning League,Winning team,Winning Team Modern Franchise,Winning Manager,Games,Losing League,Losing team,Losing Team Modern Franchise,Losing Manager
+0,1903,American League,Boston Americans,Boston Red Sox,Jimmy Collins,5–3,National League,Pittsburgh Pirates,Pittsburgh Pirates,Fred Clarke
+1,1905,National League,New York Giants,San Francisco Giants,John McGraw,4–1,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack
+2,1906,American League,Chicago White Sox,Chicago White Sox,Fielder Jones,4–2,National League,Chicago Cubs,Chicago Cubs,Frank Chance
+3,1907,National League,Chicago Cubs,Chicago Cubs,Frank Chance,4–0,American League,Detroit Tigers,Detroit Tigers,Hugh Jennings
+4,1908,National League,Chicago Cubs,Chicago Cubs,Frank Chance,4–1,American League,Detroit Tigers,Detroit Tigers,Hugh Jennings
+5,1909,National League,Pittsburgh Pirates,Pittsburgh Pirates,Fred Clarke,4–3,American League,Detroit Tigers,Detroit Tigers,Hugh Jennings
+6,1910,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack,4–1,National League,Chicago Cubs,Chicago Cubs,Frank Chance
+7,1911,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack,4–2,National League,New York Giants,San Francisco Giants,John McGraw
+8,1912,American League,Boston Red Sox,Boston Red Sox,Jake Stahl,4–3,National League,New York Giants,San Francisco Giants,John McGraw
+9,1913,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack,4–1,National League,New York Giants,San Francisco Giants,John McGraw
+10,1914,National League,Boston Braves,Atlanta Braves,George Stallings,4–0,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack
+11,1915,American League,Boston Red Sox,Boston Red Sox,Bill Carrigan,4–1,National League,Philadelphia Phillies,Philadelphia Phillies,Pat Moran
+12,1916,American League,Boston Red Sox,Boston Red Sox,Bill Carrigan,4–1,National League,Brooklyn Robins,Los Angeles Dodgers,Wilbert Robinson
+13,1917,American League,Chicago White Sox,Chicago White Sox,Pants Rowland,4–2,National League,New York Giants,San Francisco Giants,John McGraw
+14,1918,American League,Boston Red Sox,Boston Red Sox,Ed Barrow,4–2,National League,Chicago Cubs,Chicago Cubs,Fred Mitchell
+15,1919,National League,Cincinnati Reds,Cincinnati Reds,Pat Moran,5–3,American League,Chicago White Sox,Chicago White Sox,Kid Gleason
+16,1920,American League,Cleveland Indians,Cleveland Indians,Tris Speaker,5–2,National League,Brooklyn Robins,Los Angeles Dodgers,Wilbert Robinson
+17,1921,National League,New York Giants,San Francisco Giants,John McGraw,5–3,American League,New York Yankees,New York Yankees,Miller Huggins
+18,1922,National League,New York Giants,San Francisco Giants,John McGraw,4–0,American League,New York Yankees,New York Yankees,Miller Huggins
+19,1923,American League,New York Yankees,New York Yankees,Miller Huggins,4–2,National League,New York Giants,San Francisco Giants,John McGraw
+20,1924,American League,Washington Senators,Minnesota Twins,Bucky Harris,4–3,National League,New York Giants,San Francisco Giants,John McGraw
+21,1925,National League,Pittsburgh Pirates,Pittsburgh Pirates,Bill McKechnie,4–3,American League,Washington Senators,Minnesota Twins,Bucky Harris
+22,1926,National League,St. Louis Cardinals,St. Louis Cardinals,Rogers Hornsby,4–3,American League,New York Yankees,New York Yankees,Miller Huggins
+23,1927,American League,New York Yankees,New York Yankees,Miller Huggins,4–0,National League,Pittsburgh Pirates,Pittsburgh Pirates,Donie Bush
+24,1928,American League,New York Yankees,New York Yankees,Miller Huggins,4–0,National League,St. Louis Cardinals,St. Louis Cardinals,Bill McKechnie
+25,1929,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack,4–1,National League,Chicago Cubs,Chicago Cubs,Joe McCarthy
+26,1930,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack,4–2,National League,St. Louis Cardinals,St. Louis Cardinals,Gabby Street
+27,1931,National League,St. Louis Cardinals,St. Louis Cardinals,Gabby Street,4–3,American League,Philadelphia Athletics,Oakland Athletics,Connie Mack
+28,1932,American League,New York Yankees,New York Yankees,Joe McCarthy,4–0,National League,Chicago Cubs,Chicago Cubs,Charlie Grimm
+29,1933,National League,New York Giants,San Francisco Giants,Bill Terry,4–1,American League,Washington Senators,Minnesota Twins,Joe Cronin
+30,1934,National League,St. Louis Cardinals,St. Louis Cardinals,Frank Frisch,4–3,American League,Detroit Tigers,Detroit Tigers,Mickey Cochrane
+31,1935,American League,Detroit Tigers,Detroit Tigers,Mickey Cochrane,4–2,National League,Chicago Cubs,Chicago Cubs,Charlie Grimm
+32,1936,National League,New York Yankees,New York Yankees,Joe McCarthy,4–2,American League,New York Giants,San Francisco Giants,Bill Terry
+33,1937,National League,New York Yankees,New York Yankees,Joe McCarthy,4–1,American League,New York Giants,San Francisco Giants,Bill Terry
+34,1938,National League,New York Yankees,New York Yankees,Joe McCarthy,4–0,American League,Chicago Cubs,Chicago Cubs,Gabby Hartnett
+35,1939,National League,New York Yankees,New York Yankees,Joe McCarthy,4–0,American League,Cincinnati Reds,Cincinnati Reds,Bill McKechnie
+36,1940,American League,Cincinnati Reds,Cincinnati Reds,Bill McKechnie,4–3,National League,Detroit Tigers,Detroit Tigers,Del Baker
+37,1941,American League,New York Yankees,New York Yankees,Joe McCarthy,4–1,National League,Brooklyn Dodgers,Los Angeles Dodgers,Leo Durocher
+38,1942,National League,St. Louis Cardinals,St. Louis Cardinals,Billy Southworth,4–1,American League,New York Yankees,New York Yankees,Joe McCarthy
+39,1943,American League,New York Yankees,New York Yankees,Joe McCarthy,4–1,National League,St. Louis Cardinals,St. Louis Cardinals,Billy Southworth
+40,1944,National League,St. Louis Cardinals,St. Louis Cardinals,Billy Southworth,4–2,American League,St. Louis Browns,Baltimore Orioles,Luke Sewell
+41,1945,American League,Detroit Tigers,Detroit Tigers,Steve O'Neill,4–3,National League,Chicago Cubs,Chicago Cubs,Charlie Grimm
+42,1946,National League,St. Louis Cardinals,St. Louis Cardinals,Eddie Dyer,4–3,American League,Boston Red Sox,Boston Red Sox,Joe Cronin
+43,1947,American League,New York Yankees,New York Yankees,Bucky Harris,4–3,National League,Brooklyn Dodgers,Los Angeles Dodgers,Burt Shotton
+44,1948,American League,Cleveland Indians,Cleveland Indians,Lou Boudreau,4–2,National League,Boston Braves,Atlanta Braves,Billy Southworth
+45,1949,American League,New York Yankees,New York Yankees,Casey Stengel,4–1,National League,Brooklyn Dodgers,Los Angeles Dodgers,Burt Shotton
+46,1950,American League,New York Yankees,New York Yankees,Casey Stengel,4–0,National League,Philadelphia Phillies,Philadelphia Phillies,Eddie Sawyer
+47,1951,American League,New York Yankees,New York Yankees,Casey Stengel,4–2,National League,New York Giants,San Francisco Giants,Leo Durocher
+48,1952,American League,New York Yankees,New York Yankees,Casey Stengel,4–3,National League,Brooklyn Dodgers,Los Angeles Dodgers,Charlie Dressen
+49,1953,American League,New York Yankees,New York Yankees,Casey Stengel,4–2,National League,Brooklyn Dodgers,Los Angeles Dodgers,Charlie Dressen
+50,1954,National League,New York Giants,San Francisco Giants,Leo Durocher,4–0,American League,Cleveland Indians,Cleveland Indians,Al Lopez
+51,1955,National League,Brooklyn Dodgers,Los Angeles Dodgers,Walter Alston,4–3,American League,New York Yankees,New York Yankees,Casey Stengel
+52,1956,American League,New York Yankees,New York Yankees,Casey Stengel,4–3,National League,Brooklyn Dodgers,Los Angeles Dodgers,Walter Alston
+53,1957,National League,Milwaukee Braves,Atlanta Braves,Fred Haney,4–3,American League,New York Yankees,New York Yankees,Casey Stengel
+54,1958,American League,New York Yankees,New York Yankees,Casey Stengel,4–3,National League,Milwaukee Braves,Atlanta Braves,Fred Haney
+55,1959,National League,Los Angeles Dodgers,Los Angeles Dodgers,Walter Alston,4–2,American League,Chicago White Sox,Chicago White Sox,Al Lopez
+56,1960,National League,Pittsburgh Pirates,Pittsburgh Pirates,Danny Murtaugh,4–3,American League,New York Yankees,New York Yankees,Casey Stengel
+57,1961,American League,New York Yankees,New York Yankees,Ralph Houk,4–1,National League,Cincinnati Reds,Cincinnati Reds,Fred Hutchinson
+58,1962,American League,New York Yankees,New York Yankees,Ralph Houk,4–3,National League,San Francisco Giants,San Francisco Giants,Alvin Dark
+59,1963,National League,Los Angeles Dodgers,Los Angeles Dodgers,Walter Alston,4–0,American League,New York Yankees,New York Yankees,Ralph Houk
+60,1964,National League,St. Louis Cardinals,St. Louis Cardinals,Johnny Keane,4–3,American League,New York Yankees,New York Yankees,Yogi Berra
+61,1965,National League,Los Angeles Dodgers,Los Angeles Dodgers,Walter Alston,4–3,American League,Minnesota Twins,Minnesota Twins,Sam Mele
+62,1966,American League,Baltimore Orioles,Baltimore Orioles,Hank Bauer,4–0,National League,Los Angeles Dodgers,Los Angeles Dodgers,Walter Alston
+63,1967,National League,St. Louis Cardinals,St. Louis Cardinals,Red Schoendienst,4–3,American League,Boston Red Sox,Boston Red Sox,Dick Williams
+64,1968,American League,Detroit Tigers,Detroit Tigers,Mayo Smith,4–3,National League,St. Louis Cardinals,St. Louis Cardinals,Red Schoendienst
+65,1969,National League,New York Mets,New York Mets,Gil Hodges,4–1,American League,Baltimore Orioles,Baltimore Orioles,Earl Weaver
+66,1970,American League,Baltimore Orioles,Baltimore Orioles,Earl Weaver,4–1,National League,Cincinnati Reds,Cincinnati Reds,Sparky Anderson
+67,1971,National League,Pittsburgh Pirates,Pittsburgh Pirates,Danny Murtaugh,4–3,American League,Baltimore Orioles,Baltimore Orioles,Earl Weaver
+68,1972,American League,Oakland Athletics,Oakland Athletics,Dick Williams,4–3,National League,Cincinnati Reds,Cincinnati Reds,Sparky Anderson
+69,1973,American League,Oakland Athletics,Oakland Athletics,Dick Williams,4–3,National League,New York Mets,New York Mets,Yogi Berra
+70,1974,American League,Oakland Athletics,Oakland Athletics,Alvin Dark,4–1,National League,Los Angeles Dodgers,Los Angeles Dodgers,Walter Alston
+71,1975,National League,Cincinnati Reds,Cincinnati Reds,Sparky Anderson,4–3,American League,Boston Red Sox,Boston Red Sox,Darrell Johnson
+72,1976,National League,Cincinnati Reds,Cincinnati Reds,Sparky Anderson,4–0,American League,New York Yankees,New York Yankees,Billy Martin
+73,1977,American League,New York Yankees,New York Yankees,Billy Martin,4–2,National League,Los Angeles Dodgers,Los Angeles Dodgers,Tommy Lasorda
+74,1978,American League,New York Yankees,New York Yankees,Bob Lemon,4–2,National League,Los Angeles Dodgers,Los Angeles Dodgers,Tommy Lasorda
+75,1979,National League,Pittsburgh Pirates,Pittsburgh Pirates,Chuck Tanner,4–3,American League,Baltimore Orioles,Baltimore Orioles,Earl Weaver
+76,1980,National League,Philadelphia Phillies,Philadelphia Phillies,Dallas Green,4–2,American League,Kansas City Royals,Kansas City Royals,Jim Frey
+77,1981,National League,Los Angeles Dodgers,Los Angeles Dodgers,Tommy Lasorda,4–2,American League,New York Yankees,New York Yankees,Bob Lemon
+78,1982,National League,St. Louis Cardinals,St. Louis Cardinals,Whitey Herzog,4–3,American League,Milwaukee Brewers,Milwaukee Brewers,Harvey Kuenn
+79,1983,American League,Baltimore Orioles,Baltimore Orioles,Joe Altobelli,4–1,National League,Philadelphia Phillies,Philadelphia Phillies,Paul Owens
+80,1984,American League,Detroit Tigers,Detroit Tigers,Sparky Anderson,4–1,National League,San Diego Padres,San Diego Padres,Dick Williams
+81,1985,American League,Kansas City Royals,Kansas City Royals,Dick Howser,4–3,National League,St. Louis Cardinals,St. Louis Cardinals,Whitey Herzog
+82,1986,National League,New York Mets,New York Mets,Davey Johnson,4–3,American League,Boston Red Sox,Boston Red Sox,John McNamara
+83,1987,American League,Minnesota Twins,Minnesota Twins,Tom Kelly,4–3,National League,St. Louis Cardinals,St. Louis Cardinals,Whitey Herzog
+84,1988,National League,Los Angeles Dodgers,Los Angeles Dodgers,Tommy Lasorda,4–1,American League,Oakland Athletics,Oakland Athletics,Tony La Russa
+85,1989,American League,Oakland Athletics,Oakland Athletics,Tony La Russa,4–0,National League,San Francisco Giants,San Francisco Giants,Roger Craig
+86,1990,National League,Cincinnati Reds,Cincinnati Reds,Lou Piniella,4–0,American League,Oakland Athletics,Oakland Athletics,Tony La Russa
+87,1991,American League,Minnesota Twins,Minnesota Twins,Tom Kelly,4–3,National League,Atlanta Braves,Atlanta Braves,Bobby Cox
+88,1992,American League,Toronto Blue Jays,Toronto Blue Jays,Cito Gaston,4–2,National League,Atlanta Braves,Atlanta Braves,Bobby Cox
+89,1993,American League,Toronto Blue Jays,Toronto Blue Jays,Cito Gaston,4–2,National League,Philadelphia Phillies,Philadelphia Phillies,Jim Fregosi
+90,1995,National League,Atlanta Braves,Atlanta Braves,Bobby Cox,4–2,American League,Cleveland Indians,Cleveland Indians,Mike Hargrove
+91,1996,American League,New York Yankees,New York Yankees,Joe Torre,4–2,National League,Atlanta Braves,Atlanta Braves,Bobby Cox
+92,1997,National League,Florida Marlins,Florida Marlins,Jim Leyland,4–3,American League,Cleveland Indians,Cleveland Indians,Mike Hargrove
+93,1998,American League,New York Yankees,New York Yankees,Joe Torre,4–0,National League,San Diego Padres,San Diego Padres,Bruce Bochy
+94,1999,American League,New York Yankees,New York Yankees,Joe Torre,4–0,National League,Atlanta Braves,Atlanta Braves,Bobby Cox
+95,2000,American League,New York Yankees,New York Yankees,Joe Torre,4–1,National League,New York Mets,New York Mets,Bobby Valentine
+96,2001,National League,Arizona Diamondbacks,Arizona Diamondbacks,Bob Brenly,4–3,American League,New York Yankees,New York Yankees,Joe Torre
+97,2002,American League,Anaheim Angels,Anaheim Angels,Mike Scioscia,4–3,National League,San Francisco Giants,San Francisco Giants,Dusty Baker
+98,2003,National League,Florida Marlins,Florida Marlins,Jack McKeon,4–2,American League,New York Yankees,New York Yankees,Joe Torre
+99,2004,American League,Boston Red Sox,Boston Red Sox,Terry Francona,4–0,National League,St. Louis Cardinals,St. Louis Cardinals,Tony La Russa
+100,2005,American League,Chicago White Sox,Chicago White Sox,Ozzie Guillén,4–0,National League,Houston Astros,Houston Astros,Phil Garner
+101,2006,National League,St. Louis Cardinals,St. Louis Cardinals,Tony La Russa,4–1,American League,Detroit Tigers,Detroit Tigers,Jim Leyland
+102,2007,American League,Boston Red Sox,Boston Red Sox,Terry Francona,4–0,National League,Colorado Rockies,Colorado Rockies,Clint Hurdle
+103,2008,National League,Philadelphia Phillies,Philadelphia Phillies,Charlie Manuel,4–1,American League,Tampa Bay Rays,Tampa Bay Rays,Joe Maddon
+104,2009,American League,New York Yankees,New York Yankees,Joe Girardi,4–2,National League,Philadelphia Phillies,Philadelphia Phillies,Charlie Manuel
+105,2010,National League,San Francisco Giants,San Francisco Giants,Bruce Bochy,4–1,American League,Texas Rangers,Texas Rangers,Ron Washington
+106,2011,National League,St. Louis Cardinals,St. Louis Cardinals,Tony La Russa,4–3,American League,Texas Rangers,Texas Rangers,Ron Washington
+107,2012,National League,San Francisco Giants,San Francisco Giants,Bruce Bochy,4–0,American League,Detroit Tigers,Detroit Tigers,Jim Leyland
+108,2013,American League,Boston Red Sox,Boston Red Sox,John Farrell,4–2,National League,St. Louis Cardinals,St. Louis Cardinals,Mike Matheny
+109,2014,National League,San Francisco Giants,San Francisco Giants,Bruce Bochy,4–3,American League,Kansas City Royals,Kansas City Royals,Ned Yost
+110,2015,American League,Kansas City Royals,Kansas City Royals,Ned Yost,4–1,National League,New York Mets,New York Mets,Terry Collins
+111,2016,National League,Chicago Cubs,Chicago Cubs,Joe Maddon,4–3,American League,Cleveland Indians,Cleveland Indians,Terry Francona
+112,2017,American League,Houston Astros,Houston Astros,A. J. Hinch,4–3,National League,Los Angeles Dodgers,Los Angeles Dodgers,Dave Roberts
