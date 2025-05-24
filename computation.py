@@ -20,5 +20,6 @@ def hit_streak_leaders():
     hit_streaks = pd.read_csv('hit_streaks.csv')
     # drop all columns except player, streak count
     trimmed_streaks = hit_streaks[['Player', 'Games']]
+    print(trimmed_streaks)
 
 hit_streak_leaders()
