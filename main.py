@@ -1,3 +1,6 @@
+'''
+Main file, for running retrieval functions.
+'''
 import retrieval as r
 
 # to collect hit streak data
