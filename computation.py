@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-
+# this will print the current win percentages, according to the latest data
 def win_pct():
     standings = pd.read_csv('standings.csv')
     win_pct = standings[['Team', 'Win Pct', 'Date Collected']]
@@ -10,16 +10,22 @@ def win_pct():
     print(win_pct)
 
 
+# displays the current standings, according to the latest data
 def standings():
     standings = pd.read_csv('standings.csv') # standings dataframe
     # first set of brackets accesses dataframe, second set is list of columns
     standings = standings[['Team','Record','Date Collected']]
     print(standings.tail(30)) # 30 teams
 
+# this will display the top hit streak leaders
 def hit_streak_leaders():
     hit_streaks = pd.read_csv('hit_streaks.csv')
     # drop all columns except player, streak count
     trimmed_streaks = hit_streaks[['Player', 'Games']]
-    print(trimmed_streaks)
+    # this sorts the data by highest hits
+    max_streaks = trimmed_streaks.sort_values(['Games'], ascending=False)
+    # this drops duplicates of player, leaving only their highest streak
+    max_streaks = max_streaks.drop_duplicates(['Player'])
+    print(max_streaks)
 
 hit_streak_leaders()
