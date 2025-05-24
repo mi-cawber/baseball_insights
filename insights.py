@@ -1,3 +1,7 @@
+'''
+This functions in this file generate 
+insights of interest using the collected data.
+'''
 import pandas as pd
 
 
@@ -27,5 +31,3 @@ def hit_streak_leaders():
     # this drops duplicates of player, leaving only their highest streak
     max_streaks = max_streaks.drop_duplicates(['Player'])
     print(max_streaks)
-
-hit_streak_leaders()

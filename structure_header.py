@@ -1,4 +1,7 @@
-import requests, bs4, retrieval_functions
+'''
+This file was experimental and is irrelevant.
+'''
+import requests, bs4, retrieval
 
 res = requests.get('https://www.baseballmusings.com/cgi-bin/CurStreak.py') #returns response object
 soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object

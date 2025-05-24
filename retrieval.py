@@ -1,3 +1,8 @@
+'''
+The functions in this file concern the retrieval 
+of baseball data from the internet and storing 
+it into csv files.
+'''
 import requests, bs4, csv
 from datetime import date
 
