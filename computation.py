@@ -16,5 +16,9 @@ def standings():
     standings = standings[['Team','Record','Date Collected']]
     print(standings.tail(30)) # 30 teams
 
-standings()
-win_pct()
+def hit_streak_leaders():
+    hit_streaks = pd.read_csv('hit_streaks.csv')
+    # drop all columns except player, streak count
+    trimmed_streaks = hit_streaks[['Player', 'Games']]
+
+hit_streak_leaders()
