@@ -5,6 +5,7 @@ import retrieval as r, insights as i
 
 # controls flow
 switch = False
+
 while not switch:
     # main prompt
     print('Choose one of the following: \n' \
@@ -16,10 +17,20 @@ while not switch:
     # collect data
     if response == 1:
         
+        # to collect hit streak data
+        r.date_checker('hit_streaks_2025.csv', 'hit streak')
+        raw, list = r.retrieve_data('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
+        r.data_transfer(raw, list) # transfers Tag data to list
+        r.list_csv(list,'hit_streaks_2025.csv') # import into csv file
 
-
+        # to collect standings data
+        r.date_checker('standings_2025.csv', 'standings')
+        raw, list = r.retrieve_data('https://www.baseballmusings.com/cgi-bin/Standings.py?year=2025')
+        r.data_transfer(raw, list)
+        r.list_csv(list,'standings_2025.csv')
 
         switch = True
+
     # insights menu
     if response == 2:
         print('What do you want to see? \n' \
@@ -44,17 +55,3 @@ while not switch:
             switch = True
         else:
             print('Invalid input')
-
-
-
-# to collect hit streak data
-r.date_checker('hit_streaks_2025.csv', 'hit streak')
-raw, list = r.retrieve_data('https://www.baseballmusings.com/cgi-bin/CurStreak.py')
-r.data_transfer(raw, list) # transfers Tag data to list
-r.list_csv(list,'hit_streaks_2025.csv') # import into csv file
-
-# to collect standings data
-r.date_checker('standings_2025.csv', 'standings')
-raw, list = r.retrieve_data('https://www.baseballmusings.com/cgi-bin/Standings.py?year=2025')
-r.data_transfer(raw, list)
-r.list_csv(list,'standings_2025.csv')
