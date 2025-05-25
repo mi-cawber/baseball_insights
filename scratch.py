@@ -1,34 +1,19 @@
 import insights as i, pandas as pd
+'''
+-read in file, check last column, last row
 
-switch = False
-while not switch:
-    print('Choose one of the following: \n' \
-    '1) Collect data \n' \
-    '2) Get insights')
+-see if it matches current date (if it does, abort)
 
-    response = int(input())
+-if it doesn't, there's some work to do
 
-    if response == 1:
-        # enter all collection functions
-        print('hello')
-        switch = True
+-see when the last recorded date was
 
-    if response == 2:
-        print('What do you want to see? \n' \
-        '1) Standings\n' \
-        '2) Win pct ranked\n' \
-        '3) Highest hit streaks')
+'''
 
-        choice = int(input())
+df = pd.read_csv('world_series.csv')
 
-        if choice == 1:
-            i.standings()
-            switch = True
-        if choice == 2:
-            i.win_pct()
-            switch = True
-        if choice == 3:
-            i.highest_hit_streaks()
-            switch = True
-        else:
-            print('Invalid input')
+df = df['Winning team']
+
+print(df.mode())
+
+
