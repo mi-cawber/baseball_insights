@@ -1,5 +1,5 @@
 '''
-Main file, for running retrieval functions.
+Main module, for running retrieval functions.
 '''
 import retrieval as r
 
