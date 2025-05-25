@@ -22,7 +22,7 @@ def standings():
     print(standings.tail(30)) # 30 teams
 
 # this will display the top hit streak leaders
-def hit_streak_leaders():
+def highest_hit_streaks():
     hit_streaks = pd.read_csv('hit_streaks_2025.csv')
     # drop all columns except player, streak count
     trimmed_streaks = hit_streaks[['Player', 'Games', 'Date Collected']]
@@ -31,5 +31,3 @@ def hit_streak_leaders():
     # this drops duplicates of player, leaving only their highest streak
     max_streaks = max_streaks.drop_duplicates(['Player'])
     print(max_streaks)
-
-hit_streak_leaders()
