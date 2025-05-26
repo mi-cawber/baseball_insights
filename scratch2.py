@@ -9,6 +9,13 @@ soup = bs4.BeautifulSoup(response.text, 'html.parser')
 
 # select data we want using bs4.select()
 # returns ResultSet
-raw = soup.select('tbody')
+raw = soup.select('tr, td')
 
-print(type(raw))
+list = []
+
+for e in raw:
+    if e:
+        list.append(e.text.strip())
+
+
+print(list)
