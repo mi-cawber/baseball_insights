@@ -29,6 +29,8 @@ while not switch:
         r.data_transfer(raw, list)
         r.list_csv(list,'standings_2025.csv')
 
+        print('Success!')
+
         switch = True
 
     # insights menu
