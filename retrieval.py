@@ -34,6 +34,15 @@ def data_transfer(raw, list):
     for i in range(len(list)):
         list[i] = list[i].strip()
 
+# this function is temporary (probably)
+def data_transfer2(raw, list):
+    # we don't want these items in the list
+    for element in raw:
+            list.append(element.getText())
+    # get rid of pesky '\n's in player strings
+    for i in range(len(list)):
+        list[i] = list[i].strip()
+
 # shows data list
 def print_list(list):
     # show length
