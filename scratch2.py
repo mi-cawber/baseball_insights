@@ -15,7 +15,7 @@ list = []
 
 for e in raw:
     if e:
-        list.append(e.text.strip())
+        list.append(e.getText().strip())
 
 
 print(list)
