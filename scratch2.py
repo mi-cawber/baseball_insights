@@ -1,8 +1,8 @@
 import requests, bs4, csv
 
 
-response = requests.get('https://www.baseball-reference.com/leagues/majors/2025-standard-batting.shtml')
+response = requests.get('https://www.fangraphs.com/leaders/major-league?pagenum=1&pageitems=2000000000')
 
-print(response)
+print(response.text)
 
 
