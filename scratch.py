@@ -16,4 +16,6 @@ df = df['Winning team']
 
 print(df.mode())
 
+print(df.value_counts)
+
 
