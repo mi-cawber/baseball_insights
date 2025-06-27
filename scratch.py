@@ -1,21 +1,9 @@
-import insights as i, pandas as pd
-'''
--read in file, check last column, last row
+from tkinter import *
+from tkinter import ttk
 
--see if it matches current date (if it does, abort)
-
--if it doesn't, there's some work to do
-
--see when the last recorded date was
-
-'''
-
-df = pd.read_csv('world_series.csv')
-
-df = df['Winning team']
-
-print(df.mode())
-
-print(df.value_counts)
-
-
+root = Tk()
+frm = ttk.Frame(root, padding=10)
+frm.grid()
+ttk.Label(frm,text='hello mf').grid(column=0, row=0)
+ttk.Button(frm, text='Quit', command=root.destroy).grid(column=1, row=0)
+root.mainloop()

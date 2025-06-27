@@ -52,8 +52,10 @@ while not switch:
         if choice == 2:
             i.win_pct()
             switch = True
+
         if choice == 3:
             i.highest_hit_streaks()
             switch = True
+            
         else:
             print('Invalid input')
