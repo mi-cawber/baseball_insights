@@ -1,21 +1,16 @@
-import requests, bs4, csv
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+import traceback
 
+try:
+    page = webdriver.Safari()
 
-# returns Response object
-response = requests.get('https://www.fangraphs.com/leaders/major-league?pagenum=1&pageitems=2000000000')
+    page.get('https://www.baseballmusings.com/cgi-bin/PSComparePitchers.py.com')
 
-# use bs4 to turn into BeautifulSoup object
-soup = bs4.BeautifulSoup(response.text, 'html.parser')
+    start_box = page.find_element(By.NAME, 'StartDate')
+    start_box.send_keys('03/27/2025')
 
-# select data we want using bs4.select()
-# returns ResultSet
-raw = soup.select('tr, td')
-
-list = []
-
-for e in raw:
-    if e:
-        list.append(e.getText().strip())
-
-
-print(list)
+    time.sleep(100)
+except:
+    traceback.print_exc()
