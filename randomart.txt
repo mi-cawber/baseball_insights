@@ -1,0 +1,12 @@
+256 SHA256:6nnH8HqeQEVIxvrtxt2W/dKkFut+3Kmfo6LX5uKfn4s waltwest@outlook.com (ED25519)
++--[ED25519 256]--+
+|       oo..      |
+|       .o.       |
+|       .  .      |
+|      .  .       |
+|       .S.       |
+|       oo .   . .|
+|      . .* ... Xo|
+|     . ...O=.o@oO|
+|      o..B*.*EBO=|
++----[SHA256]-----+
