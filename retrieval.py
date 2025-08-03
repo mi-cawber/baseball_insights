@@ -7,16 +7,27 @@ import requests, bs4, csv
 from datetime import date
 
 # big boss function, receives data
-def retrieve_data(url):
-    res = requests.get(url) #returns response object
-    soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object
-    raw = soup.select('td .number, td .letter') # captures data in Tag format
+def scraping_pipeline(url, data_file, data_name):
+    #this will first check to see if data is already current
+    date_checker(data_file, data_name)
+
+    # returns Response object
+    res = requests.get(url)
+
+    # returns BeautifulSoup object
+    soup = bs4.BeautifulSoup(res.text, 'html.parser') 
+
+    # returns Tag object
+    raw = soup.select('td .number, td .letter') 
+
+    # stores data
     list = [] # to store data
     return raw, list
 
-# transfers Tag data into list
-def data_transfer(raw, list):
+# transforms Tag data into python list
+def Tag_to_list(raw, list):
     # we don't want these items in the list
+    # this data is captured from bs4 because of my soup.select() parameters
     blacklist = ['Player', 'Games', 'At Bats', 'Runs', 'Hits',
                  'HR', 'RBI', 'BB', 'K', 'BA', 'OBA', 'Slug%',
                  'Last Game Date', 'AL East', 'AL Central',
@@ -27,7 +38,7 @@ def data_transfer(raw, list):
         # if the element is a member of the blacklist, skip
         if element.getText() in blacklist:
             continue
-        # if okay, add to list
+        # if data I want, then add to the list
         else:
             list.append(element.getText())
     # get rid of pesky '\n's in player strings
@@ -35,6 +46,7 @@ def data_transfer(raw, list):
         list[i] = list[i].strip()
 
 # this function is temporary (probably)
+# 8/3/25.. I don't know what this is for
 def data_transfer2(raw, list):
     # we don't want these items in the list
     for element in raw:
@@ -43,15 +55,8 @@ def data_transfer2(raw, list):
     for i in range(len(list)):
         list[i] = list[i].strip()
 
-# shows data list
-def print_list(list):
-    # show length
-    print(f'The length of the list is: {len(list)}', '\n')
-    for element in list:
-        print(element)
-
 # inserts data into csv
-def list_csv(list, csv):
+def list_to_csv(list, csv):
     # will be needed later
     today = date.today().strftime("%Y-%m-%d")
     # open file in append mode
@@ -74,6 +79,8 @@ def list_csv(list, csv):
         file.write(f'{today}\n')
 
 # checks if the function has been run today, will stop duplicate data
+# file = the file that will be checked to see if data had already been collected on current day
+# data = a simple placeholder for printing which dataset is current if necessary
 def date_checker(file, data):
     with open(file, 'r') as file:
         reader = csv.reader(file)
@@ -84,6 +91,6 @@ def date_checker(file, data):
 
         if liszt == today:
             print(f'Abort: {data} data has already been collected for {today} :)')
-            exit()
+            exit() #This will just end the script
         else:
             print(f'Collecting {data} data for {today}... :)')
