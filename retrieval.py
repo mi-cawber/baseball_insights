@@ -6,9 +6,11 @@ it into csv files.
 import requests, bs4, csv
 from datetime import date
 
-# big boss function, receives data
+# scrapes, transforms, stores data of interest
 def scraping_pipeline(url, data_file, data_name):
+
     #this will first check to see if data is already current
+    #if the data is current, the script will just stop
     date_checker(data_file, data_name)
 
     # returns Response object
@@ -20,9 +22,14 @@ def scraping_pipeline(url, data_file, data_name):
     # returns Tag object
     raw = soup.select('td .number, td .letter') 
 
-    # stores data
-    list = [] # to store data
-    return raw, list
+    # stores data (needed for next function)
+    list = [] 
+    
+    # morphs Tag output into list
+    Tag_to_list(raw, list)
+
+    # this appends the newly formed list to our csv
+    list_to_csv(list, data_file)
 
 # transforms Tag data into python list
 def Tag_to_list(raw, list):
@@ -45,19 +52,9 @@ def Tag_to_list(raw, list):
     for i in range(len(list)):
         list[i] = list[i].strip()
 
-# this function is temporary (probably)
-# 8/3/25.. I don't know what this is for
-def data_transfer2(raw, list):
-    # we don't want these items in the list
-    for element in raw:
-            list.append(element.getText())
-    # get rid of pesky '\n's in player strings
-    for i in range(len(list)):
-        list[i] = list[i].strip()
 
-# inserts data into csv
+# appends scraped list to csv
 def list_to_csv(list, csv):
-    # will be needed later
     today = date.today().strftime("%Y-%m-%d")
     # open file in append mode
     with open(csv, 'a') as file:
