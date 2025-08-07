@@ -1,7 +1,0 @@
-1. check when data was last scraped, get data retroactively if needed
-    -The ending on the URL is ?EndDate=MM%2FDD%2FYYY
-2. Figure out insights of interest
-3. what other data can I scrape?
-    -Other hitting stats?
-4. enable automatic running of script
-    -use crontab

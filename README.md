@@ -5,10 +5,13 @@ The goal of this program is to collect baseball data from the internet and gener
 potentially interesting insights. For example, seeing which players are consistently on hitting streaks.
 
 # Libraries Used
+[requests](https://pypi.org/project/requests/): Used for pulling data from the web. <br>
+e.g., <br>
+`res = requests.get(url)`<br>
+
 [BeautifulSoup4](https://pypi.org/project/beautifulsoup4/): Used for retrieving baseball stats from the web.
 <br>
 e.g., <br>
-`res = requests.get(url) # returns response object` <br>
 `soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object` <br>
 `raw = soup.select('td .number, td .letter') # returns data in type Tag` <br>
 `list = [] # to store data` <br>
