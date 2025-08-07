@@ -9,7 +9,7 @@ interesting insights. For example, seeing which players are consistently on hitt
 e.g., <br>
 `res = requests.get(url)`<br>
 
-[BeautifulSoup4](https://pypi.org/project/beautifulsoup4/): Used for retrieving baseball stats from the web.
+[BeautifulSoup4](https://pypi.org/project/beautifulsoup4/): Used for parsing HTML data that was pulled by requests.
 <br>
 e.g., <br>
 `soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object` <br>
