@@ -1,8 +1,8 @@
 <img src='photos/baseball_player.png' alt='baseball player' style='width: 100px; height: 90px'>
 
 # baseball_insights
-The goal of this program is to collect baseball data from the internet and generate
-potentially interesting insights. For example, seeing which players are consistently on hitting streaks.
+The goal of this project is to collect baseball data from the internet and generate
+interesting insights. For example, seeing which players are consistently on hitting streaks.
 
 # Libraries Used
 [requests](https://pypi.org/project/requests/): Used for pulling data from the web. <br>
