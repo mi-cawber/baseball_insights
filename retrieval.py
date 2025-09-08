@@ -8,7 +8,6 @@ from datetime import date
 
 # scrapes, transforms, stores data of interest
 def scraping_pipeline(url, data_file, data_name):
-
     #this will first check to see if data is already current
     #if the data is current, the script will just stop
     date_checker(data_file, data_name)
@@ -16,7 +15,7 @@ def scraping_pipeline(url, data_file, data_name):
     # returns Response object
     res = requests.get(url)
 
-    # returns BeautifulSoup object
+    # parses HTML, returns BeautifulSoup object
     soup = bs4.BeautifulSoup(res.text, 'html.parser') 
 
     # returns Tag object
@@ -55,7 +54,9 @@ def Tag_to_list(raw, list):
 
 # appends scraped list to csv
 def list_to_csv(list, csv):
+    # needed for date tracking
     today = date.today().strftime("%Y-%m-%d")
+
     # open file in append mode
     with open(csv, 'a') as file:
         # enumerate() gives index and value
@@ -70,8 +71,10 @@ def list_to_csv(list, csv):
                         # add date added for previous row and newline to next
                         file.write(f'{today}\n{element},')
                         continue
+
             # add numerical data
             file.write(f'{element},')
+
         # this will print last
         file.write(f'{today}\n')
 
