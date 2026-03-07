@@ -21,3 +21,6 @@ e.g., <br>
 e.g.,<br>
 `df = pd.read_csv('hit_streaks.csv') # create dataframe`<br>
 `print(df['Player'].value_counts()) # print player frequencies`
+
+# Database
+[SQLite](https://sqlite.org/index.html): Version 3.51.2
