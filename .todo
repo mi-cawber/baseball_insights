@@ -1,4 +1,8 @@
 -This project is going to be revisited and restructured.
+    - we are going to ditch the old pipeline. web scrape -> csv insertion is done. We will be exploring
+    sqlite implementation. However, I do believe the web scraping mechanism could remain the same
+    - the structure of the programs will be changed. The current pipeline puts too much functionality into functions (not enough modularity).
 -look into data permissions, credit data in readme
 -test to see if pipeline still works
 -baseball-reference and baseball-savant used by simliar project. 
+
