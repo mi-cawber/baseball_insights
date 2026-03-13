@@ -1,0 +1,11 @@
+birthdays are written in ISO-8601 format YYYY-MM-DD
+
+-create table
+CREATE TABLE team (
+    team_id INTEGER PRIMARY KEY,
+    name TEXT NOT NULL,
+    league_id INTEGER,
+    FOREIGN KEY (league_id) REFERENCES league(league_id)
+);
+
+-insert values
