@@ -14,7 +14,7 @@ e.g., <br>
 `soup = bs4.BeautifulSoup(res.text, 'html.parser') # returns BeautifulSoup object` <br>
 `raw = soup.select('td .number, td .letter') # returns Tag object` <br>
 
-[pandas](https://pandas.pydata.org/docs/): Used for computational operations on retrieved data.
+[pandas](https://pandas.pydata.org/docs/): Used for computations.
 
 # Database
 [SQLite](https://sqlite.org/index.html): Version 3.51.2
